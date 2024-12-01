@@ -9,7 +9,6 @@ const nnextButton = document.querySelector('.nslide-control.next');
 function updateNewsSlidePosition() {
     const offset = -(currentNewsSlide * (100 / visiblenewsSlides));
     newsSlides.style.transform = `translateX(${offset}%)`;
-    console.log(currentNewsSlide);
     // Disable "Previous" button if at the first slide
     if (currentNewsSlide === 0) {
         nprevButton.disabled = true;

@@ -2,8 +2,9 @@
 <html lang="vi">
     <head>
         <link rel="stylesheet" href="style.css">
-        <script src="images/showslide.js" defer></script>
-        <script src="images/nshowslide.js" defer></script>
+        <script src="showslide.js" defer></script>
+        <script src="nshowslide.js" defer></script>
+        <script src="gshowslide.js" defer></script>
     </head>
     <body>
         <div class="navbar">
@@ -236,34 +237,42 @@
                         <div class="qw2">
                             <img src="images/news1.jpg" alt="news image 1">
                             <div style="margin-top: 10px; margin-left:1px; font: bold 15px/20px Optima, sans-serif; text-transform: capitalize;">Quà tặng quảng cáo cho doanh nghiệp</div>
+                            <div style="margin-top: 10px; font-size: 15px;">content...</div>
                         </div>
                         <div class="qw2">
                             <img src="images/news2.jpg" alt="news image 2">
                             <div style="margin-top: 10px; margin-left:1px; font: bold 15px/20px Optima, sans-serif; text-transform: capitalize;">Top 5+ nghệ thuật tặng quà cho sếp mà ai cũng cần biết</div>
+                            <div style="margin-top: 10px; font-size: 15px;">content...</div>
                         </div>
                         <div class="qw2">
                             <img src="images/news3.jpg" alt="news image 3">
                             <div style="margin-top: 10px; margin-left:1px; font: bold 15px/20px Optima, sans-serif; text-transform: capitalize;">Các cách tặng quà tinh tế, độc đáo và tràn đầy ý nghĩa</div>
+                            <div style="margin-top: 10px; font-size: 15px;">content...</div>
                         </div>
                         <div class="qw2">
                             <img src="images/news8.jpg" alt="news image 8">
                             <div style="margin-top: 10px; margin-left:1px; font: bold 15px/20px Optima, sans-serif; text-transform: capitalize;">Nghệ thuật tặng quà trong giao tiếp</div>
+                            <div style="margin-top: 10px; font-size: 15px;">content...</div>
                         </div>
                         <div class="qw2">
                             <img src="images/news4.jpg" alt="news image 4">
                             <div style="margin-top: 10px; margin-left:1px; font: bold 15px/20px Optima, sans-serif; text-transform: capitalize;">Những ý nghĩa độc đáo của ngày tặng quà</div>
+                            <div style="margin-top: 10px; font-size: 15px;">content...</div>
                         </div>
                         <div class="qw2">
                             <img src="images/news5.jpg" alt="news image 5">
                             <div style="margin-top: 10px; margin-left:1px; font: bold 15px/20px Optima, sans-serif; text-transform: capitalize;">6+ ý tưởng tặng quà thầy cô ý nghĩa nhất</div>
+                            <div style="margin-top: 10px; font-size: 15px;">content...</div>
                         </div>
                         <div class="qw2">
                             <img src="images/news6.jpg" alt="news image 6">
                             <div style="margin-top: 10px; margin-left:1px; font: bold 15px/20px Optima, sans-serif; text-transform: capitalize;">20+ gợi ý quà tặng cho nam giới</div>
+                            <div style="margin-top: 10px; font-size: 15px;">content...</div>
                         </div>
                         <div class="qw2">
                             <img src="images/news7.jpg" alt="news image 7">
                             <div style="margin-top: 10px; margin-left:1px; font: bold 15px/20px Optima, sans-serif; text-transform: capitalize;">top 6 gợi ý quà tặng sinh nhật cho nữ</div>
+                            <div style="margin-top: 10px; font-size: 15px;">content...</div>
                         </div>
                     </div>
                 </div>
@@ -271,8 +280,25 @@
             </div>
         </div>
 
-        <div class="Gallery">
-            Gallery
+        <div class="gallery">
+            <div class="gallery-title" style="display:flex;justify-content: center;">
+                GALLERY
+            </div>  
+            <div class="gallery-slideshow">
+                <button class="gslide-control prev" onclick="prevGallerySlide()">&#10094;</button>
+                <div class="gallery-image-wrapper">
+                    <div class="gallery-image" id="gallery-slides">
+                        <img src="images/g1.jpg" alt="gallery image 1">
+                        <img src="images/g2.jpg" alt="gallery image 2">
+                        <img src="images/g3.jpg" alt="gallery image 3">
+                        <img src="images/g4.jpg" alt="gallery image 4">
+                        <img src="images/g5.jpg" alt="gallery image 5"> 
+                        <img src="images/g6.jpg" alt="gallery image 6"> 
+                        <img src="images/g7.jpg" alt="gallery image 7"> 
+                    </div>
+                </div>
+                <button class="gslide-control next" onclick="nextGallerySlide()">&#10095;</button>
+            </div>
         </div>
 
         <div class="footer">
