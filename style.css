@@ -168,8 +168,10 @@
 .qw1 {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 14px;
+    max-width: 23.5%;
 }
 .qw1 .img-wrapper {
     width: 178.2px;
@@ -212,6 +214,7 @@
     width: 570px;
     height: 570px;
     border-radius: 3%;
+    transition: ease 0.5s;
   }
 .two-prods .img-wrapper:hover img{
     transform: scale(1.1);
@@ -319,12 +322,17 @@
     margin-left: 15px;
     margin-right: 30px;
     margin-top: 30px;
+    overflow: hidden;
 }
 .sig-prod-img img{
     width: 275.75px;
     height: 275.75px;
     border-radius: 5%;
     display:flex;
+    transition: transform 0.5s ease;
+}
+.sig-prod-img :hover img{
+    transform: scale(1.05);
 }
 .footer{
     background-color: rgb(71, 69, 69);
