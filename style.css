@@ -372,8 +372,9 @@
 }
 
 .news-image-wrapper {
-    overflow: hidden;
+    overflow: hidden; 
     flex: 1;
+    position: relative; 
 }
 
 .news-image {
@@ -385,11 +386,18 @@
 }
 
 .news-image img {
-    width: 372.75px;
-    height: 267.75px;
-    border-radius: 6%;
+    width: 372.75px; 
+    height: 267.75px; 
+    border-radius: 6%; 
     display: block;
+    transition: transform 0.5s ease; 
+    object-fit: cover; 
 }
+.news-image img:hover {
+    transform: scale(1.03);
+    z-index: 1; 
+}
+
 
 .nslide-control {
     background-color: rgba(0, 0, 0, 0.5);
