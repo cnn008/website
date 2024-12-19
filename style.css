@@ -142,10 +142,11 @@
 }
 .button2{
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 12.6px;
     background-color: white;
     color: rgb(227, 126, 9);
-    border-color: rgb(227, 126, 9);
+    border-color: rgb(235, 163, 8);
+    border-width: 0.1cap;
     width: 90px;
     height: 35px;
     font-weight: 50;
